@@ -113,6 +113,7 @@ private FirebaseAuth mAuth;
                 firebaseAuthWithGoogle(account);
             } catch (ApiException e) {
                 Log.w(TAG, "Google sign in failed", e);
+                pd.dismiss();
             }
         }
     }
